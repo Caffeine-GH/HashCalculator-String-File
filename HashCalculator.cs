@@ -17,7 +17,7 @@ namespace HashCalculator
         public static string BytesToString(byte[] b)
         {
             StringBuilder sb = new StringBuilder();
-            for (int i = 0; i < b.Length; i++) sb.AppendFormat("{0:x2}", b[i])
+            for (int i = 0; i < b.Length; i++) sb.AppendFormat("{0:x2}", b[i++]);
             return sb.ToString();
         }
 
